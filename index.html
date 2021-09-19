@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+
+    <!------font awesome----------->
+    <script src="https://kit.fontawesome.com/4fa42c0453.js" crossorigin="anonymous"></script>
+
+    <!-----css stylesheet---------->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section class="stop-watch-container">
+
+        <div id="stop-watch">
+            <h1><span class="brand-name">Sports</span> Stop Watch <i class="fas fa-stopwatch"></i></h1>
+            <h3>
+                <span id="hour">00</span>:<span id="mins">00</span>:<span id="seconds">00</span>:<small
+                    id="milli-seconds">00</small>
+            </h3>
+        </div>
+    </section>
+    <div class="control-btn">
+        <button onclick="toggleBtn()" id="start-btn" class="start-btn">Start</button>
+        <button onclick="toggleBtn()" id="stop-btn" class="d-none stop-btn">Stop</button>
+        <button onclick="resetTime()" id="reset-btn" class="reset-btn">Reset</button>
+    </div>
+
+
+
+    <!------script js----------------->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
